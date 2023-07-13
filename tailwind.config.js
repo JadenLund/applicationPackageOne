@@ -37,12 +37,8 @@ module.exports = {
         'custom': '0 4px 8px 0 rgba(0, 0, 0, 0.2)',
       },
       colors: {
-        'gold': '#E8A733',
-        'primary': "#89b098",
-        'secondary': '#7ca490',
-        'tertiary': '#4f707',
-        'extra': '#2f4858',
-        'accent': '#320e3b',
+        'fadein': '#8A22BE',
+        'fadeout': "#E70A8C",
       },
       fontFamily: {
         'lilita': ['Lilita One', 'cursive'],
@@ -62,13 +58,6 @@ module.exports = {
         "s": "35rem",
         "t": "2.5rem",
       },
-      fontSize: {
-        sm: ['14px', '20px'],
-        base: ['16px', '24px'],
-        lg: ['20px', '28px'],
-        xl: ['24px', '32px'],
-        xxl: ['40px', '48px']
-      }
     },
   },
 };
