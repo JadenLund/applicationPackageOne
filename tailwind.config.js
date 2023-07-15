@@ -54,7 +54,7 @@ module.exports = {
         "x": "25vh",
         "w": "10vh",
         "q": "100rem",
-        "r": "50rem",
+        "r": "75rem",
         "s": "35rem",
         "t": "2.5rem",
       },

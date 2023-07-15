@@ -3,9 +3,9 @@ import Wave from "../images/Wave.jpg";
 export default function Header() {
   return (
     <div className="relative ">
-      <img className="rounded-3xl flex" src={Wave} />
+      <img className="w-r h-s rounded-3xl flex" src={Wave} />
       <div className="absolute top-0 h-full flex items-center">
-        <div className="w-1/2">
+        <div className="ml-8 space-y-e  w-1/3 mr-c">
           <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-fadein to-fadeout">
             Brand Name
           </h1>
@@ -37,7 +37,7 @@ export default function Header() {
             />
           </div>
         </div>
-        <img className="w-6/12 absolute right-0" src={Vape1} />
+        <img className="w-1/2 right-0" src={Vape1} />
       </div>
     </div>
   );
