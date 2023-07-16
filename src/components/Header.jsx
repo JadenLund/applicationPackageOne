@@ -32,7 +32,7 @@ export default function Header() {
             </div>
             <input
               type="button"
-              className="w-1/3 font-semibold rounded-xl bg-gradient-to-r from-fadein to-fadeout text-white"
+              className="w-1/3 mx-2 px-8 font-semibold rounded-xl bg-gradient-to-r from-fadein to-fadeout text-white"
               value="Subscribe"
             />
           </div>
