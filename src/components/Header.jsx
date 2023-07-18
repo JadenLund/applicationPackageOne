@@ -14,7 +14,7 @@ export default function Header() {
             devices, and accessories at our state-of-the-art vape shop.
           </p>
           <div className="flex ">
-            <div className="flex bg-white rounded-xl items-center">
+            <div className="flex bg-white rounded-lg items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -26,18 +26,18 @@ export default function Header() {
               </svg>
               <input
                 type="text"
-                className="h-10 px-1 outline-none rounded-xl"
+                className="h-10 px-1 w-y outline-none rounded-lg"
                 placeholder="Username"
               />
             </div>
             <input
               type="button"
-              className="w-1/3 mx-2 px-8 font-semibold rounded-xl bg-gradient-to-r from-fadein to-fadeout text-white"
+              className="px-e ml-2 font-semibold rounded-lg bg-gradient-to-r from-fadein to-fadeout text-white"
               value="Subscribe"
             />
           </div>
         </div>
-        <img className="w-1/2 " src={Vape1} />
+        <img className="w-1/2 transform -scale-x-100" src={Vape1} />
       </div>
     </div>
   );
