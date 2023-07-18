@@ -5,17 +5,8 @@ export default function NavBar() {
     return deltaTop;
   };
   return (
-    <nav className="sticky z-10 top-0 font-semibold text-xl bg-tab grid grid-cols-3 items-center">
-      <a
-        href="home"
-        className="flex no-underline text-gray-400 hover:text-gold"
-      >
-        <img
-          className="h-8 w-8 "
-          src="https://www.freeiconspng.com/thumbs/letter-j-icon-png/letter-j-icon-png-26.png"
-        />
-        <span>BRAND</span>
-      </a>
+    <nav className="sticky z-10 py-4 top-0 font-semibold text-xl bg-tab grid grid-cols-3">
+      <span>BRAND</span>
       <div className="flex sm:justify-center space-x-8 ">
         {[
           ["Home", "home"],
@@ -34,7 +25,7 @@ export default function NavBar() {
           </Link>
         ))}
       </div>
-      <div className="flex space-x-8 justify-end"></div>
+      <div className="flex space-x-8 justify-end"> socials</div>
     </nav>
   );
 }

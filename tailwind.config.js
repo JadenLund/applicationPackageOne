@@ -42,7 +42,7 @@ module.exports = {
         'tab': '#161120'
       },
       fontFamily: {
-        'lilita': ['Lilita One', 'cursive'],
+        'roboto': ['Roboto', 'cursive'],
       },
       spacing: {
         "a": "100%",
