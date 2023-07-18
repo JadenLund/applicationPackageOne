@@ -9,11 +9,11 @@ export default function Header() {
           <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-fadein to-fadeout">
             Brand Name
           </h1>
-          <p className="inline-block align-middle text-gray-300">
+          <p className="inline-block align-middle text-gray-300 ">
             Choose from our curated selection of premium e-liquids, cutting-edge
             devices, and accessories at our state-of-the-art vape shop.
           </p>
-          <div className="flex">
+          <div className="flex ">
             <div className="flex bg-white rounded-xl items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@ export default function Header() {
               </svg>
               <input
                 type="text"
-                className="h-10 px-1 outline-none"
+                className="h-10 px-1 outline-none rounded-xl"
                 placeholder="Username"
               />
             </div>
@@ -37,7 +37,8 @@ export default function Header() {
             />
           </div>
         </div>
-        <img className="w-1/2 right-0" src={Vape1} />
+        <img className="w-1/2 mr-1.5" src={Vape1} />
+        {/* fix padding of vape */}
       </div>
     </div>
   );
