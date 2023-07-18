@@ -39,6 +39,7 @@ module.exports = {
       colors: {
         'fadein': '#8A22BE',
         'fadeout': "#E70A8C",
+        'tab': '#161120'
       },
       fontFamily: {
         'lilita': ['Lilita One', 'cursive'],
@@ -54,7 +55,7 @@ module.exports = {
         "x": "25vh",
         "w": "10vh",
         "q": "100rem",
-        "r": "75rem",
+        "r": "70rem",
         "s": "35rem",
         "t": "2.5rem",
       },

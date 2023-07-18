@@ -2,10 +2,10 @@ import Vape1 from "../images/Vape1.png";
 import Wave from "../images/Wave.jpg";
 export default function Header() {
   return (
-    <div className="relative ">
+    <div className="relative">
       <img className="w-r h-s rounded-3xl flex" src={Wave} />
       <div className="absolute top-0 h-full flex items-center">
-        <div className="ml-8 space-y-e  w-1/3 mr-c">
+        <div className="mx-8 space-y-e  w-1/2">
           <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-fadein to-fadeout">
             Brand Name
           </h1>
@@ -37,8 +37,7 @@ export default function Header() {
             />
           </div>
         </div>
-        <img className="w-1/2 mr-1.5" src={Vape1} />
-        {/* fix padding of vape */}
+        <img className="w-1/2 " src={Vape1} />
       </div>
     </div>
   );
