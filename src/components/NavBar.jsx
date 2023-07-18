@@ -15,6 +15,7 @@ export default function NavBar() {
           ["Find Us", "find"],
         ].map(([title, url]) => (
           <Link
+            key={url}
             to={url}
             spy={true}
             smooth={true}

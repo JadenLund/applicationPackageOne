@@ -1,4 +1,4 @@
-import product from "./../images/product.png";
+import { storeBenefitData } from "./Information";
 export default function About() {
   return (
     <div>
@@ -11,14 +11,13 @@ export default function About() {
         unique needs of each customer.
       </p>
       <div className="grid cols-3">
-        <div>
-          <img src={product} />
-          <h2>Premium Products</h2>
-          <p>
-            We provide premium products, ensuring you have access to the latest
-            and highest quality curated options.
-          </p>
-        </div>
+        {storeBenefitData.map((info, index) => (
+          <div key={`${info.title}_${index}`}>
+            <img src={info.icon} />
+            <h1>{info.title}</h1>
+            <p>{info.description}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
