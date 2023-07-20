@@ -39,7 +39,9 @@ module.exports = {
       colors: {
         'fadein': '#8A22BE',
         'fadeout': "#E70A8C",
-        'tab': '#161120'
+        'tab': '#161120',
+        'bg-t': '#261F35',
+        'bg-m': '#161120'
       },
       fontFamily: {
         'roboto': ['Roboto', 'cursive'],
@@ -58,6 +60,7 @@ module.exports = {
         "r": "70rem",
         "s": "35rem",
         "t": "2.5rem",
+        "u": "4rem"
       },
     },
   },
