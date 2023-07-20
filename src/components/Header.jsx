@@ -9,7 +9,7 @@ export default function Header() {
           <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-fadein to-fadeout">
             Brand Name
           </h1>
-          <p className="inline-block align-middle text-gray-300">
+          <p className="inline-block align-middle text-gray-300 text-lg">
             Choose from our curated selection of premium e-liquids, cutting-edge
             devices, and accessories at our state-of-the-art vape shop.
           </p>
