@@ -42,7 +42,8 @@ module.exports = {
         'tab': '#161120',
         'bg-t': '#261F35',
         'bg-m': '#161120',
-        's-text': '#BFBFBF'
+        's-text': '#BFBFBF',
+        'marq': '#F70684'
       },
       fontFamily: {
         'roboto': ['Roboto', 'cursive'],
