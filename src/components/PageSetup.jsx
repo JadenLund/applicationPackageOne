@@ -9,7 +9,7 @@ import Contact from "./Contact";
 export default function PageSetup() {
   const components = [Header, About, Products, Marquee, FindUs, Contact];
   return (
-    <div className="bg-gradient-to-t from-bg-t via-bg-m to-bg-t space-y-8">
+    <div>
       <NavBar />
       {components.map((Comp, index) => (
         <div key={index} className="flex justify-center items-center">

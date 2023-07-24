@@ -3,13 +3,13 @@ import Wave from "../images/Wave.jpg";
 export default function Header() {
   return (
     <div className="relative">
-      <img className="w-r h-s rounded-3xl flex" src={Wave} />
+      <img className="w-r h-s rounded-3xl" src={Wave} />
       <div className="absolute top-0 h-full flex items-center">
-        <div className="mx-8 space-y-e  w-1/2">
+        <div className="mx-8 space-y-e lg:w-1/2 sm:w-x">
           <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-fadein to-fadeout">
             Brand Name
           </h1>
-          <p className="inline-block align-middle text-gray-300 text-lg">
+          <p className="text-gray-300 text-lg">
             Choose from our curated selection of premium e-liquids, cutting-edge
             devices, and accessories at our state-of-the-art vape shop.
           </p>
@@ -26,7 +26,7 @@ export default function Header() {
               </svg>
               <input
                 type="text"
-                className="h-10 px-1 w-y outline-none rounded-lg"
+                className="h-10 px-1 outline-none rounded-lg"
                 placeholder="Username"
               />
             </div>
