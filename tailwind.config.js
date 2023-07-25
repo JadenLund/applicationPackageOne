@@ -13,8 +13,8 @@ module.exports = {
       },
       animation: {
         fadeIn: "fadeIn 2s ease-in forwards",
-        marquee: 'marquee 25s linear infinite',
-        marquee2: 'marquee2 25s linear infinite',
+        marquee: 'marquee 10s linear infinite',
+        marquee2: 'marquee2 10s linear infinite',
       },
       keyframes: {
         marquee: {
@@ -64,7 +64,9 @@ module.exports = {
         "t": "2.5rem",
         "u": "4rem",
         "v": "30vh",
-        'ta': '50rem'
+        'ta': '50rem',
+        "f": '16vw',
+        'g': '1vw'
 
       },
     },

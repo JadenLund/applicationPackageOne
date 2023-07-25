@@ -12,26 +12,52 @@ export default function Marquee() {
   }
 
   return (
-    <div className="bg-marq relative flex h-w overflow-hidden">
-      <div className=" py-12 animate-marquee whitespace-nowrap flex items-center justify-evenly object-scale-down">
-        <img src={Company1} />
-        <img src={Company2} />
-        <img src={Company3} />
-        <img src={Company4} />
-        <img src={Company5} />
-        <img src={Company6} />
-        <img src={Company7} />
-        <img src={Company8} />
+    <div className="marquee bg-marq overflow-hidden flex">
+      <div className="marquee-content flex animate-marquee">
+        <div className="justify-between">
+          <img className="marquee-item h-v block w-z" src={Company1} />
+        </div>
+        <div className="justify-between">
+          <img className="marquee-item h-v block w-z" src={Company1} />
+        </div>
+        <div className="justify-between">
+          <img className="marquee-item h-v block w-z" src={Company1} />
+        </div>
+        <div className="justify-between">
+          <img className="marquee-item h-v block w-z" src={Company1} />
+        </div>
+        <div className="justify-between">
+          <img className="marquee-item h-v block w-z" src={Company1} />
+        </div>
+        <div className="justify-between">
+          <img className="marquee-item h-v block w-z" src={Company1} />
+        </div>
+        <div className="justify-between">
+          <img className="marquee-item h-v block w-z" src={Company1} />
+        </div>
       </div>
-      <div className="py-12 animate-marquee whitespace-nowrap flex items-center justify-evenly object-scale-down">
-        <img src={Company1} />
-        <img src={Company2} />
-        <img src={Company3} />
-        <img src={Company4} />
-        <img src={Company5} />
-        <img src={Company6} />
-        <img src={Company7} />
-        <img src={Company8} />
+      <div className="marquee-content flex animate-marquee">
+        <div className="justify-between">
+          <img className="marquee-item h-v block w-z" src={Company1} />
+        </div>
+        <div className="justify-between">
+          <img className="marquee-item h-v block w-z" src={Company1} />
+        </div>
+        <div className="justify-between">
+          <img className="marquee-item h-v block w-z" src={Company1} />
+        </div>
+        <div className="justify-between">
+          <img className="marquee-item h-v block w-z" src={Company1} />
+        </div>
+        <div className="justify-between">
+          <img className="marquee-item h-v block w-z" src={Company1} />
+        </div>
+        <div className="justify-between">
+          <img className="marquee-item h-v block w-z" src={Company1} />
+        </div>
+        <div className="justify-between">
+          <img className="marquee-item h-v block w-z" src={Company1} />
+        </div>
       </div>
     </div>
   );
