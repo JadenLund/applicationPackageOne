@@ -41,7 +41,7 @@ export default function Marquee() {
           <img className="marquee-item h-v block w-z" src={Company1} />
         </div>
         <div className="justify-between">
-          <img className="marquee-item h-v block w-z" src={Company1} />
+          <img className="marquee-item h-v block w-z" src={Company2} />
         </div>
         <div className="justify-between">
           <img className="marquee-item h-v block w-z" src={Company1} />
