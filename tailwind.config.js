@@ -26,8 +26,8 @@ module.exports = {
           "100%": { opacity: 1 }
         },
         marquee2: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(0%)' },
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
         },
       },
       transitionProperty: {
@@ -66,7 +66,8 @@ module.exports = {
         "v": "30vh",
         'ta': '50rem',
         "f": '16vw',
-        'g': '1vw'
+        'g': '1vw',
+        'h': '2rem'
 
       },
     },
