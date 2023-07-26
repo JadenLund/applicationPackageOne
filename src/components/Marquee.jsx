@@ -1,62 +1,32 @@
-import Company1 from "../images/Company1.png";
-import Company2 from "../images/Company2.png";
-import Company3 from "../images/Company3.png";
-import Company4 from "../images/Company4.png";
-import Company5 from "../images/Company5.png";
-import Company6 from "../images/Company6.png";
-import Company7 from "../images/Company7.png";
-import Company8 from "../images/Company8.png";
+import Comp1 from "../images/Comp1.png";
+import Comp2 from "../images/Comp2.png";
+import Comp3 from "../images/Comp3.png";
+import Comp4 from "../images/Comp4.png";
+import Comp5 from "../images/Comp5.png";
+import Comp6 from "../images/Comp6.png";
+import Comp7 from "../images/Comp7.png";
+import Comp8 from "../images/Comp8.png";
 export default function Marquee() {
   {
     /* later organize to use a for loop for all of the image names maybe */
   }
 
   return (
-    <div className="marquee bg-marq overflow-hidden flex">
-      <div className="marquee-content flex animate-marquee">
-        <div className="justify-between">
-          <img className="marquee-item h-v block w-z" src={Company1} />
+    <div>
+      <div className="bg-marq overflow-hidden flex">
+        <div className="bg-white gap-u w-screen flex animate-marquee">
+          {[Comp1, Comp2, Comp3, Comp4, Comp5, Comp6, Comp7, Comp8].map(
+            (company, index) => (
+              <img key={index} className="h-u" src={company} />
+            )
+          )}
         </div>
-        <div className="justify-between">
-          <img className="marquee-item h-v block w-z" src={Company1} />
-        </div>
-        <div className="justify-between">
-          <img className="marquee-item h-v block w-z" src={Company1} />
-        </div>
-        <div className="justify-between">
-          <img className="marquee-item h-v block w-z" src={Company1} />
-        </div>
-        <div className="justify-between">
-          <img className="marquee-item h-v block w-z" src={Company1} />
-        </div>
-        <div className="justify-between">
-          <img className="marquee-item h-v block w-z" src={Company1} />
-        </div>
-        <div className="justify-between">
-          <img className="marquee-item h-v block w-z" src={Company1} />
-        </div>
-      </div>
-      <div className="marquee-content flex animate-marquee">
-        <div className="justify-between">
-          <img className="marquee-item h-v block w-z" src={Company1} />
-        </div>
-        <div className="justify-between">
-          <img className="marquee-item h-v block w-z" src={Company2} />
-        </div>
-        <div className="justify-between">
-          <img className="marquee-item h-v block w-z" src={Company1} />
-        </div>
-        <div className="justify-between">
-          <img className="marquee-item h-v block w-z" src={Company1} />
-        </div>
-        <div className="justify-between">
-          <img className="marquee-item h-v block w-z" src={Company1} />
-        </div>
-        <div className="justify-between">
-          <img className="marquee-item h-v block w-z" src={Company1} />
-        </div>
-        <div className="justify-between">
-          <img className="marquee-item h-v block w-z" src={Company1} />
+        <div className="gap-u flex w-screen animate-marquee2">
+          {[Comp1, Comp2, Comp3, Comp4, Comp5, Comp6, Comp7, Comp8].map(
+            (company, index) => (
+              <img key={index} className="h-u" src={company} />
+            )
+          )}
         </div>
       </div>
     </div>
