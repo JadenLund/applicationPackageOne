@@ -10,7 +10,7 @@ export default function Products() {
       <Card>
         {productCarouselData.map((info, index) => (
           <div key={`${info.title}_${index}`}>
-            <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+            <div className="h-s w-r mx-auto bg-white rounded-xl shadow-md overflow-hidden ">
               <div className="md:flex">
                 <div className="md:shrink-0">
                   <img

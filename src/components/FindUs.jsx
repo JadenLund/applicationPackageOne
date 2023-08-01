@@ -1,4 +1,14 @@
-export default function FindUs() {
+// import React, { useState } from "react";
+// import { Map, Marker, GoogleApiWrapper, InfoWindow } from "google-maps-react";
+
+export default function FindUs(props) {
+  //   const coords = { lat: 32.73124, lng: -97.32594 };
+
+  //   return (
+  //     <div className="h-full w-full">
+  //       <Map google={props.google} zoom={15} initiaCenter={coords}></Map>
+  //     </div>
+  //   );
   return (
     <div className="text-center ">
       <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-fadein to-fadeout">
@@ -19,3 +29,6 @@ export default function FindUs() {
     </div>
   );
 }
+// export default GoogleApiWrapper({
+//   apiKey: "AIzaSyAOXrBGty4UmANDZbuXAy6OOvUkURjZ02o",
+// })(FindUs);

@@ -5,28 +5,26 @@ export default function NavBar() {
     return deltaTop;
   };
   return (
-    <nav className="sticky z-10 py-4 top-0 font-semibold text-xl bg-tab grid grid-cols-3">
-      <span>BRAND</span>
-      <div className="flex sm:justify-center space-x-8 ">
-        {[
-          ["Home", "home"],
-          ["About", "about"],
-          ["Products", "products"],
-          ["Find Us", "find"],
-        ].map(([title, url]) => (
-          <Link
-            key={url}
-            to={url}
-            spy={true}
-            smooth={true}
-            offset={-60}
-            className="p-2 hover:text-gold no-underline text-gray-400"
-          >
-            {title}
-          </Link>
-        ))}
+    <nav className="sticky z-10 top-0 align-center justify-center flex font-semibold text-xl bg-tab py-5">
+      <div className="text-gray-400 flex  w-r justify-between px-8">
+        <div className="flex gap-2 ">
+          <i class="fa-regular fa-circle fa-2x" />
+          <h1 className="text-3xl"> BRAND</h1>
+        </div>
+
+        <div className="space-x-t text-2xl">
+          {["Home", "About", "Products", "Find Us"].map((title) => (
+            <Link key={title} to={title} spy={true} smooth={true} offset={-60}>
+              {title}
+            </Link>
+          ))}
+        </div>
+        <div className="gap-6 flex fa-2x">
+          <i className="fa-brands fa-twitter" />
+          <i className="fa-brands fa-instagram" />
+          <i className="fa-brands fa-facebook" />
+        </div>
       </div>
-      <div className="flex space-x-8 justify-end"> socials</div>
     </nav>
   );
 }

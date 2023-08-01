@@ -49,7 +49,7 @@ module.exports = {
         'roboto': ['Roboto', 'cursive'],
       },
       spacing: {
-        "a": "100%",
+        "a": "400%",
         "b": "75%",
         "c": "25%",
         "d": "15%",
