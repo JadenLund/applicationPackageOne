@@ -1,53 +1,10 @@
-import { useState, useEffect } from "react";
-
-export default function Card({
-  children: slides,
-  autoSlide = false,
-  autoSlideInterval = 3000,
-}) {
-  const [curr, setCurr] = useState(0);
-
-  const prev = () =>
-    setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1));
-  const next = () =>
-    setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
-
-  useEffect(() => {
-    if (!autoSlide) return;
-    const slideInterval = setInterval(next, autoSlideInterval);
-    return () => clearInterval(slideInterval);
-  }, []);
-
+export default function Card({ product }) {
   return (
-    <div className="rounded-3xl min-w-3xl overflow-hidden relative">
-      <div
-        className="flex transition-transform ease-out duration-500"
-        style={{ transform: `translateX(-${curr * 100}%)` }}
-      >
-        {slides}
-      </div>
-
-      <div className="absolute inset-0 flex items-center justify-between p-4">
-        {[
-          [prev, "<"],
-          [next, ">"],
-        ].map(([direc, arrow]) => (
-          <button
-            onClick={direc}
-            className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
-          >
-            {arrow}
-          </button>
-        ))}
-      </div>
-
-      <div className="absolute bottom-4 right-0 left-0 flex items-center justify-center gap-2">
-        {slides.map((_, i) => (
-          <div
-            className={`transition-all w-3 h-3 bg-white rounded-full
-              ${curr === i ? "" : "bg-opacity-50"}`}
-          />
-        ))}
+    <div className="w-r h-s flex  py-2 px-4">
+      <img className="w-1/2" src={product.image} alt={product.title} />
+      <div className="flex flex-col ml-2">
+        <h1 className="text-3xl font-semibold">{product.title}</h1>
+        <p className="text-lg">{product.description}</p>
       </div>
     </div>
   );
