@@ -1,34 +1,44 @@
-// import React, { useState } from "react";
-// import { Map, Marker, GoogleApiWrapper, InfoWindow } from "google-maps-react";
+import React, { useState, useCallback, useEffect } from "react";
+import { GoogleMap, useJsApiLoader, MarkerF } from "@react-google-maps/api";
 
-export default function FindUs(props) {
-  //   const coords = { lat: 32.73124, lng: -97.32594 };
+export default function FindUs() {
+  const address = "1234 N Main St, Fort Worth, TX 76106, USA";
+  const coordinates = { lat: 32.77639, lng: -97.3457 };
+  const { isLoaded } = useJsApiLoader({
+    id: "google-map-script",
+    googleMapsApiKey: "AIzaSyAOXrBGty4UmANDZbuXAy6OOvUkURjZ02o",
+  });
 
-  //   return (
-  //     <div className="h-full w-full">
-  //       <Map google={props.google} zoom={15} initiaCenter={coords}></Map>
-  //     </div>
-  //   );
-  return (
-    <div className="text-center ">
-      <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-fadein to-fadeout">
-        Find Us
-      </h1>
-      <h2>1234 Main street avenue, Fort Worth, Texas 12345</h2>
-      <div class="relative w-full h-96">
-        <iframe
-          class="absolute top-0 left-0 w-full h-full border-0"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.6047778442107!2d-97.34812528868899!3d32.77621997355404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e76ac887b6e01%3A0x684b7d0160556e5e!2s1234%20N%20Main%20St%2C%20Fort%20Worth%2C%20TX%2076106!5e0!3m2!1sen!2sus!4v1691175987841!5m2!1sen!2sus"
-          frameborder="0"
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
-        ></iframe>
-      </div>
-      <div className="bg-bg"></div>
+  const [map, setMap] = useState(null);
+
+  const onLoad = useCallback(function callback(map) {
+    setMap(map);
+  }, []);
+
+  const onUnmount = useCallback(function callback() {
+    setMap(null);
+  }, []);
+
+  return isLoaded ? (
+    <div>
+      <a
+        className="no-underline"
+        href="https://www.google.com/maps/place/1234+N+Main+St,+Fort+Worth,+TX+76106/@32.77622,-97.3481253,17z/data=!3m1!4b1!4m6!3m5!1s0x864e76ac887b6e01:0x684b7d0160556e5e!8m2!3d32.77622!4d-97.345545!16s%2Fg%2F11sn_3pxky?entry=ttu"
+        target="_blank"
+      >
+        1234 Main street avenue, Fort Worth, Texas 12345
+      </a>
+      <GoogleMap
+        mapContainerStyle={{ width: "800px", height: "400px" }}
+        center={coordinates}
+        zoom={14}
+        onLoad={onLoad}
+        onUnmount={onUnmount}
+      >
+        <MarkerF position={coordinates} />
+      </GoogleMap>
     </div>
+  ) : (
+    <>Map could not load</>
   );
 }
-// export default GoogleApiWrapper({
-//   apiKey: "AIzaSyAOXrBGty4UmANDZbuXAy6OOvUkURjZ02o",
-// })(FindUs);
