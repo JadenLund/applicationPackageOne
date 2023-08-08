@@ -2,22 +2,42 @@ import NavBar from "./NavBar";
 import Header from "./Header";
 import About from "./About";
 import Collection from "./Collection";
-import Marquee from "./Marquee";
 import FindUs from "./FindUs";
 import Contact from "./Contact";
+import { Element } from "react-scroll";
+import React from "react";
 
-export default function PageSetup() {
-  const components = [Header, About, Collection, Marquee, FindUs, Contact];
-  return (
-    <div>
-      <NavBar />
-      {components.map((Comp, index) => (
-        <div key={index} className="flex justify-center items-center">
-          <div className="w-r m-6">
-            <Comp />
+const components = [
+  [Header, "Home"],
+  [About, "About"],
+  [Collection, "Products"],
+  [FindUs, "Find Us"],
+  [Contact, "Contact Us"],
+];
+export default class PageSetup extends React.Component {
+  constructor(props) {
+    super(props);
+    this.scrollToTop = this.scrollToTop.bind(this);
+  }
+
+  scrollToTop() {
+    scroll.scrollToTop();
+  }
+
+  render() {
+    return (
+      <div>
+        <NavBar />
+        {components.map(([Comp, name], index) => (
+          <div key={index} className="flex justify-center items-center">
+            <div className="w-r m-6">
+              <Element name={name}>
+                <Comp />
+              </Element>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
-  );
+        ))}
+      </div>
+    );
+  }
 }
