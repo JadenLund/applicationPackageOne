@@ -37,7 +37,7 @@ export default function About() {
         offset={-90}
         className="mt-8 flex justify-center text-xl"
       >
-        <button className="px-e py-2 font-semibold rounded-lg bg-gradient-to-r from-fadein to-fadeout">
+        <button className="px-e py-2 mt-3 font-semibold rounded-lg bg-gradient-to-r from-fadein to-fadeout">
           Learn More
           <i class="ml-3 fa-solid fa-chevron-right"></i>
         </button>

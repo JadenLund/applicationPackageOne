@@ -25,7 +25,7 @@ export default function Collection() {
       </h1>
       <div className="w-r h-i rounded-3xl overflow-hidden relative bg-gradient-to-r from-fadein to-fadeout text-white">
         <div
-          className="flex transition-transform ease-out duration-500"
+          className="flex transition-transform ease-out duration-700"
           style={{ transform: `translateX(-${currentCard * 70}rem)` }}
         >
           {productCarouselData.map((info, index) => (
