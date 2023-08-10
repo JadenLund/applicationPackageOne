@@ -1,4 +1,5 @@
 import Line from "../images/Line.png";
+import { Link } from "react-scroll";
 import { storeBenefitData } from "./Information";
 export default function About() {
   return (
@@ -29,12 +30,18 @@ export default function About() {
         ))}
       </div>
       {/* this then scrolls down to the contact us section */}
-      <div className="mt-8 flex justify-center text-xl">
+      <Link
+        to="Contact Us"
+        spy={true}
+        smooth={true}
+        offset={-90}
+        className="mt-8 flex justify-center text-xl"
+      >
         <button className="px-e py-2 font-semibold rounded-lg bg-gradient-to-r from-fadein to-fadeout">
           Learn More
           <i class="ml-3 fa-solid fa-chevron-right"></i>
         </button>
-      </div>
+      </Link>
     </div>
   );
 }

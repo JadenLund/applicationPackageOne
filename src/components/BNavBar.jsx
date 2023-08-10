@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 export default function BNavBar() {
   return (
-    <div className="text-center text-gray-300">
+    <div className="-mt-8 text-center text-gray-300">
       <h1 className="text-7xl">Brand</h1>
       <div className="my-4 space-x-4 text-xl">
         {["Home", "About", "Products", "Find Us", "Contact Us"].map((title) => (
@@ -10,7 +10,7 @@ export default function BNavBar() {
             to={title}
             spy={true}
             smooth={true}
-            offset={-80}
+            offset={-90}
             className="cursor-pointer"
           >
             {title}

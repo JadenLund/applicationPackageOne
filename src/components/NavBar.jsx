@@ -3,12 +3,12 @@ import { Link } from "react-scroll";
 export default function NavBar() {
   return (
     <nav className="sticky z-10 top-0 align-center justify-center flex font-semibold text-xl bg-tab py-5">
-      <div className="text-gray-400 flex  w-r justify-between px-8">
+      <div className="cursor-pointer text-gray-400 flex  w-r justify-between px-8">
         <Link
           to="Home"
           spy={true}
           smooth={true}
-          offset={-80}
+          offset={-90}
           className="flex gap-2"
         >
           <i class="fa-regular fa-circle fa-2x" />
@@ -22,7 +22,7 @@ export default function NavBar() {
               to={title}
               spy={true}
               smooth={true}
-              offset={-80}
+              offset={-85}
               className="py-7 px-4 hover:bg-tab-dark cursor-pointer transition duration-700"
             >
               {title}

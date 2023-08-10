@@ -32,7 +32,7 @@ export default class PageSetup extends React.Component {
         <NavBar />
         {components.map(([Comp, name], index) => (
           <div key={index} className="flex justify-center items-center">
-            <div className="w-r m-6">
+            <div className="w-r m-4">
               <Element name={name}>
                 <Comp />
               </Element>
