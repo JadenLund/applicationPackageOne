@@ -20,7 +20,7 @@ export default function Collection() {
 
   return (
     <div>
-      <h1 className="my-5 text-center text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-fadein to-fadeout">
+      <h1 className="mt-1 mb-4 text-center text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-fadein to-fadeout">
         Some of the Best
       </h1>
       <div className="w-r h-i rounded-3xl overflow-hidden relative bg-gradient-to-r from-fadein to-fadeout text-white">
@@ -48,7 +48,7 @@ export default function Collection() {
           ].map(([direc, arrow]) => (
             <button
               onClick={direc}
-              className="p-1 px-2 rounded-2xl bg-white bg-opacity-0 text-white transition duration-300 hover:bg-opacity-20"
+              className="p-1 px-2.5 rounded-2xl bg-white bg-opacity-0 text-white transition duration-300 hover:bg-opacity-20"
             >
               <i className={`fa-solid fa-chevron-${arrow} fa-2x`} />
             </button>
