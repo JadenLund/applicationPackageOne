@@ -41,16 +41,16 @@ export default function Collection() {
             </div>
           ))}
         </div>
-        <div className="absolute inset-0 flex items-center w-r justify-between p-4">
+        <div className="absolute inset-0 flex items-center justify-between p-4">
           {[
-            [prevSlide, "<"],
-            [nextSlide, ">"],
+            [prevSlide, "left"],
+            [nextSlide, "right"],
           ].map(([direc, arrow]) => (
             <button
               onClick={direc}
-              className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
+              className="p-1 px-2 rounded-2xl bg-white bg-opacity-0 text-white transition duration-300 hover:bg-opacity-20"
             >
-              {arrow}
+              <i className={`fa-solid fa-chevron-${arrow} fa-2x`} />
             </button>
           ))}
         </div>
@@ -58,7 +58,7 @@ export default function Collection() {
         <div className="absolute bottom-4 right-0 left-0 flex items-center justify-center gap-2">
           {productCarouselData.map((_, i) => (
             <div
-              className={`transition-all w-3 h-3 bg-white rounded-full
+              className={`transition duration-300 w-3 h-3 bg-white rounded-full
               ${currentCard === i ? "" : "bg-opacity-50"}`}
             />
           ))}
