@@ -23,7 +23,7 @@ export default function Collection() {
       <h1 className="my-5 text-center text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-fadein to-fadeout">
         Some of the Best
       </h1>
-      <div className="w-r rounded-3xl overflow-hidden relative bg-gradient-to-r from-fadein to-fadeout text-white">
+      <div className="w-r h-i rounded-3xl overflow-hidden relative bg-gradient-to-r from-fadein to-fadeout text-white">
         <div
           className="flex transition-transform ease-out duration-500"
           style={{ transform: `translateX(-${currentCard * 70}rem)` }}
@@ -64,7 +64,9 @@ export default function Collection() {
           ))}
         </div>
       </div>
-      <Marquee className="my-5" />
+      <div className="my-5">
+        <Marquee />
+      </div>
     </div>
   );
 }

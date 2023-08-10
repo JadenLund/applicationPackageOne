@@ -40,6 +40,7 @@ module.exports = {
         'fadein': '#8A22BE',
         'fadeout': "#E70A8C",
         'tab': '#161120',
+        'tab-dark': '#08060D',
         'bg-t': '#261F35',
         'bg-m': '#161120',
         's-text': '#BFBFBF',
@@ -67,7 +68,8 @@ module.exports = {
         'ta': '50rem',
         "f": '16vw',
         'g': '1vw',
-        'h': '2rem'
+        'h': '2rem',
+        'i': '34rem'
 
       },
     },

@@ -7,7 +7,7 @@ export default function About() {
         Who We are
       </h1>
       <div className="text-center my-5 flex flex-col items-center text-xl">
-        <p className="w-z">
+        <p className="w-z -mt-2">
           Since 2015, our vape shop has been dedicated to offering a diverse
           range of high-quality vaping products and accessories, tailored to
           meet the unique needs of each customer.

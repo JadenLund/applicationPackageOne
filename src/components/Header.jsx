@@ -2,7 +2,7 @@ import Vape1 from "../images/Vape1.png";
 import Wave from "../images/Wave.jpg";
 export default function Header() {
   return (
-    <div className="relative">
+    <div className="relative pt-8">
       <img className="w-r h-s rounded-3xl" src={Wave} />
       <div className="absolute top-0 h-full flex items-center">
         <div className="mx-8 space-y-e lg:w-1/2 sm:w-x">
