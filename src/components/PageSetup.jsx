@@ -6,6 +6,7 @@ import FindUs from "./FindUs";
 import Contact from "./Contact";
 import { Element } from "react-scroll";
 import React from "react";
+import BNavBar from "./BNavBar";
 
 const components = [
   [Header, "Home"],
@@ -13,6 +14,7 @@ const components = [
   [Collection, "Products"],
   [FindUs, "Find Us"],
   [Contact, "Contact Us"],
+  [BNavBar, "Bottom Nav Bar"],
 ];
 export default class PageSetup extends React.Component {
   constructor(props) {
